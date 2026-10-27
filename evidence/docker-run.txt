@@ -1,0 +1,33 @@
+Дата: 2026-10-20T18:10:09+03:00
+Команда: docker run --rm api-test
+
+=== RUN   TestGraphQLQuery
+=== RUN   TestGraphQLQuery/Oleg
+=== RUN   TestGraphQLQuery/Олег
+--- PASS: TestGraphQLQuery (0.65s)
+    --- PASS: TestGraphQLQuery/Oleg (0.47s)
+    --- PASS: TestGraphQLQuery/Олег (0.19s)
+=== RUN   TestGraphQLMutation
+--- PASS: TestGraphQLMutation (0.21s)
+=== RUN   TestGraphQLMutationRejectsInvalidVariables
+=== RUN   TestGraphQLMutationRejectsInvalidVariables/Возраст_строкой
+=== RUN   TestGraphQLMutationRejectsInvalidVariables/Дробный_возраст
+=== RUN   TestGraphQLMutationRejectsInvalidVariables/Имя_не_передано
+--- PASS: TestGraphQLMutationRejectsInvalidVariables (0.58s)
+    --- PASS: TestGraphQLMutationRejectsInvalidVariables/Возраст_строкой (0.19s)
+    --- PASS: TestGraphQLMutationRejectsInvalidVariables/Дробный_возраст (0.19s)
+    --- PASS: TestGraphQLMutationRejectsInvalidVariables/Имя_не_передано (0.21s)
+=== RUN   TestRESTPostLifecycle
+--- PASS: TestRESTPostLifecycle (1.24s)
+=== RUN   TestRESTLoginAndBearer
+--- PASS: TestRESTLoginAndBearer (0.91s)
+=== RUN   TestRESTMeRejectsInvalidToken
+=== RUN   TestRESTMeRejectsInvalidToken/Без_токена
+=== RUN   TestRESTMeRejectsInvalidToken/Неверный_токен
+--- PASS: TestRESTMeRejectsInvalidToken (0.57s)
+    --- PASS: TestRESTMeRejectsInvalidToken/Без_токена (0.28s)
+    --- PASS: TestRESTMeRejectsInvalidToken/Неверный_токен (0.29s)
+PASS
+ok  	hw3-kudrin	4.172s
+
+Код завершения: 0

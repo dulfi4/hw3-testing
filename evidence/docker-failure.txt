@@ -1,0 +1,64 @@
+Дата: 2026-10-20T18:10:41+03:00
+Команда: docker run --rm -e GRAPHQL_API_URL=http://127.0.0.1:1/graphql api-test
+
+=== RUN   TestGraphQLQuery
+=== RUN   TestGraphQLQuery/Oleg
+    graphql_test.go:45: POST : Post "http://127.0.0.1:1/graphql": dial tcp 127.0.0.1:1: connect: connection refused
+    client_test.go:54: POST http://127.0.0.1:1/graphql
+        Заголовки: map[Accept:[application/json] Content-Type:[application/json]]
+        Тело: {"query":"query Hello($person: PersonInput!) { hello(person: $person) }","variables":{"person":{"age":20,"name":"Oleg"}}}
+        Ошибка: Post "http://127.0.0.1:1/graphql": dial tcp 127.0.0.1:1: connect: connection refused
+=== RUN   TestGraphQLQuery/Олег
+    graphql_test.go:45: POST : Post "http://127.0.0.1:1/graphql": dial tcp 127.0.0.1:1: connect: connection refused
+    client_test.go:54: POST http://127.0.0.1:1/graphql
+        Заголовки: map[Accept:[application/json] Content-Type:[application/json]]
+        Тело: {"query":"query Hello($person: PersonInput!) { hello(person: $person) }","variables":{"person":{"age":20,"name":"Олег"}}}
+        Ошибка: Post "http://127.0.0.1:1/graphql": dial tcp 127.0.0.1:1: connect: connection refused
+--- FAIL: TestGraphQLQuery (0.00s)
+    --- FAIL: TestGraphQLQuery/Oleg (0.00s)
+    --- FAIL: TestGraphQLQuery/Олег (0.00s)
+=== RUN   TestGraphQLMutation
+    graphql_test.go:63: POST : Post "http://127.0.0.1:1/graphql": dial tcp 127.0.0.1:1: connect: connection refused
+    client_test.go:54: POST http://127.0.0.1:1/graphql
+        Заголовки: map[Accept:[application/json] Content-Type:[application/json]]
+        Тело: {"query":"mutation CreatePerson($person: PersonInput!) {\n\tcreatePerson(person: $person) { id name age }\n}","variables":{"person":{"age":20,"name":"Student 0d00f65c-ca65-29db-e710-1d3504d8801e"}}}
+        Ошибка: Post "http://127.0.0.1:1/graphql": dial tcp 127.0.0.1:1: connect: connection refused
+--- FAIL: TestGraphQLMutation (0.00s)
+=== RUN   TestGraphQLMutationRejectsInvalidVariables
+=== RUN   TestGraphQLMutationRejectsInvalidVariables/Возраст_строкой
+    graphql_test.go:91: POST : Post "http://127.0.0.1:1/graphql": dial tcp 127.0.0.1:1: connect: connection refused
+    client_test.go:54: POST http://127.0.0.1:1/graphql
+        Заголовки: map[Accept:[application/json] Content-Type:[application/json]]
+        Тело: {"query":"mutation CreatePerson($person: PersonInput!) {\n\tcreatePerson(person: $person) { id name age }\n}","variables":{"person":{"age":"abc","name":"Student"}}}
+        Ошибка: Post "http://127.0.0.1:1/graphql": dial tcp 127.0.0.1:1: connect: connection refused
+=== RUN   TestGraphQLMutationRejectsInvalidVariables/Дробный_возраст
+    graphql_test.go:91: POST : Post "http://127.0.0.1:1/graphql": dial tcp 127.0.0.1:1: connect: connection refused
+    client_test.go:54: POST http://127.0.0.1:1/graphql
+        Заголовки: map[Accept:[application/json] Content-Type:[application/json]]
+        Тело: {"query":"mutation CreatePerson($person: PersonInput!) {\n\tcreatePerson(person: $person) { id name age }\n}","variables":{"person":{"age":20.5,"name":"Student"}}}
+        Ошибка: Post "http://127.0.0.1:1/graphql": dial tcp 127.0.0.1:1: connect: connection refused
+=== RUN   TestGraphQLMutationRejectsInvalidVariables/Имя_не_передано
+    graphql_test.go:91: POST : Post "http://127.0.0.1:1/graphql": dial tcp 127.0.0.1:1: connect: connection refused
+    client_test.go:54: POST http://127.0.0.1:1/graphql
+        Заголовки: map[Accept:[application/json] Content-Type:[application/json]]
+        Тело: {"query":"mutation CreatePerson($person: PersonInput!) {\n\tcreatePerson(person: $person) { id name age }\n}","variables":{"person":{"age":20}}}
+        Ошибка: Post "http://127.0.0.1:1/graphql": dial tcp 127.0.0.1:1: connect: connection refused
+--- FAIL: TestGraphQLMutationRejectsInvalidVariables (0.00s)
+    --- FAIL: TestGraphQLMutationRejectsInvalidVariables/Возраст_строкой (0.00s)
+    --- FAIL: TestGraphQLMutationRejectsInvalidVariables/Дробный_возраст (0.00s)
+    --- FAIL: TestGraphQLMutationRejectsInvalidVariables/Имя_не_передано (0.00s)
+=== RUN   TestRESTPostLifecycle
+--- PASS: TestRESTPostLifecycle (1.31s)
+=== RUN   TestRESTLoginAndBearer
+--- PASS: TestRESTLoginAndBearer (0.92s)
+=== RUN   TestRESTMeRejectsInvalidToken
+=== RUN   TestRESTMeRejectsInvalidToken/Без_токена
+=== RUN   TestRESTMeRejectsInvalidToken/Неверный_токен
+--- PASS: TestRESTMeRejectsInvalidToken (0.60s)
+    --- PASS: TestRESTMeRejectsInvalidToken/Без_токена (0.30s)
+    --- PASS: TestRESTMeRejectsInvalidToken/Неверный_токен (0.30s)
+FAIL
+FAIL	hw3-kudrin	2.836s
+FAIL
+
+Код завершения: 1

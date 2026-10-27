@@ -1,0 +1,33 @@
+Дата: 2026-10-20T18:09:06+03:00
+Команда: go test -count=1 -v ./...
+
+=== RUN   TestGraphQLQuery
+=== RUN   TestGraphQLQuery/Oleg
+=== RUN   TestGraphQLQuery/Олег
+--- PASS: TestGraphQLQuery (0.76s)
+    --- PASS: TestGraphQLQuery/Oleg (0.58s)
+    --- PASS: TestGraphQLQuery/Олег (0.18s)
+=== RUN   TestGraphQLMutation
+--- PASS: TestGraphQLMutation (0.18s)
+=== RUN   TestGraphQLMutationRejectsInvalidVariables
+=== RUN   TestGraphQLMutationRejectsInvalidVariables/Возраст_строкой
+=== RUN   TestGraphQLMutationRejectsInvalidVariables/Дробный_возраст
+=== RUN   TestGraphQLMutationRejectsInvalidVariables/Имя_не_передано
+--- PASS: TestGraphQLMutationRejectsInvalidVariables (0.55s)
+    --- PASS: TestGraphQLMutationRejectsInvalidVariables/Возраст_строкой (0.18s)
+    --- PASS: TestGraphQLMutationRejectsInvalidVariables/Дробный_возраст (0.18s)
+    --- PASS: TestGraphQLMutationRejectsInvalidVariables/Имя_не_передано (0.19s)
+=== RUN   TestRESTPostLifecycle
+--- PASS: TestRESTPostLifecycle (2.03s)
+=== RUN   TestRESTLoginAndBearer
+--- PASS: TestRESTLoginAndBearer (0.89s)
+=== RUN   TestRESTMeRejectsInvalidToken
+=== RUN   TestRESTMeRejectsInvalidToken/Без_токена
+=== RUN   TestRESTMeRejectsInvalidToken/Неверный_токен
+--- PASS: TestRESTMeRejectsInvalidToken (0.72s)
+    --- PASS: TestRESTMeRejectsInvalidToken/Без_токена (0.28s)
+    --- PASS: TestRESTMeRejectsInvalidToken/Неверный_токен (0.43s)
+PASS
+ok  	hw3-kudrin	5.550s
+
+Код завершения: 0

@@ -1,0 +1,219 @@
+api-tests	Set up job	﻿2026-10-27T09:20:04.9192439Z Current runner version: '2.338.0'
+api-tests	Set up job	2026-10-27T09:20:04.9219883Z ##[group]Runner Image Provisioner
+api-tests	Set up job	2026-10-27T09:20:04.9220755Z Hosted Compute Agent
+api-tests	Set up job	2026-10-27T09:20:04.9221746Z Version: 20261021.618
+api-tests	Set up job	2026-10-27T09:20:04.9222502Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+api-tests	Set up job	2026-10-27T09:20:04.9223269Z Build Date: 2026-10-21T00:45:21Z
+api-tests	Set up job	2026-10-27T09:20:04.9224075Z Worker ID: {2e6c356c-41dc-47d7-87f8-600f2e85df8f}
+api-tests	Set up job	2026-10-27T09:20:04.9224801Z Region: northcentralus
+api-tests	Set up job	2026-10-27T09:20:04.9225417Z Cloud: Azure
+api-tests	Set up job	2026-10-27T09:20:04.9225970Z ##[endgroup]
+api-tests	Set up job	2026-10-27T09:20:04.9227515Z ##[group]Operating System
+api-tests	Set up job	2026-10-27T09:20:04.9228238Z Ubuntu
+api-tests	Set up job	2026-10-27T09:20:04.9228766Z 24.04.5
+api-tests	Set up job	2026-10-27T09:20:04.9229273Z LTS
+api-tests	Set up job	2026-10-27T09:20:04.9229847Z ##[endgroup]
+api-tests	Set up job	2026-10-27T09:20:04.9230437Z ##[group]Runner Image
+api-tests	Set up job	2026-10-27T09:20:04.9231147Z Image: ubuntu-24.04
+api-tests	Set up job	2026-10-27T09:20:04.9231918Z Version: 20261012.334.1
+api-tests	Set up job	2026-10-27T09:20:04.9232972Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+api-tests	Set up job	2026-10-27T09:20:04.9234797Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+api-tests	Set up job	2026-10-27T09:20:04.9235879Z ##[endgroup]
+api-tests	Set up job	2026-10-27T09:20:04.9236975Z ##[group]GITHUB_TOKEN Permissions
+api-tests	Set up job	2026-10-27T09:20:04.9238962Z Contents: read
+api-tests	Set up job	2026-10-27T09:20:04.9239627Z Metadata: read
+api-tests	Set up job	2026-10-27T09:20:04.9240173Z ##[endgroup]
+api-tests	Set up job	2026-10-27T09:20:04.9242935Z Secret source: Actions
+api-tests	Set up job	2026-10-27T09:20:04.9243968Z Cache mode: write
+api-tests	Set up job	2026-10-27T09:20:04.9245407Z Prepare workflow directory
+api-tests	Set up job	2026-10-27T09:20:04.9686436Z Prepare all required actions
+api-tests	Set up job	2026-10-27T09:20:04.9766859Z Getting action download info
+api-tests	Set up job	2026-10-27T09:20:05.2705016Z Download action repository 'actions/checkout@11d5960a326750d5838078e36cf38b85af677262' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+api-tests	Set up job	2026-10-27T09:20:05.4646996Z Complete job name: api-tests
+api-tests	Получить код	﻿2026-10-27T09:20:05.5646438Z ##[group]Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+api-tests	Получить код	2026-10-27T09:20:05.5647563Z with:
+api-tests	Получить код	2026-10-27T09:20:05.5648055Z   repository: dulfi4/hw3-testing
+api-tests	Получить код	2026-10-27T09:20:05.5652704Z   token: ***
+api-tests	Получить код	2026-10-27T09:20:05.5653187Z   ssh-strict: true
+api-tests	Получить код	2026-10-27T09:20:05.5653646Z   ssh-user: git
+api-tests	Получить код	2026-10-27T09:20:05.5654117Z   persist-credentials: true
+api-tests	Получить код	2026-10-27T09:20:05.5654622Z   clean: true
+api-tests	Получить код	2026-10-27T09:20:05.5655086Z   sparse-checkout-cone-mode: true
+api-tests	Получить код	2026-10-27T09:20:05.5655621Z   fetch-depth: 1
+api-tests	Получить код	2026-10-27T09:20:05.5656069Z   fetch-tags: false
+api-tests	Получить код	2026-10-27T09:20:05.5656525Z   show-progress: true
+api-tests	Получить код	2026-10-27T09:20:05.5656990Z   lfs: false
+api-tests	Получить код	2026-10-27T09:20:05.5657417Z   submodules: false
+api-tests	Получить код	2026-10-27T09:20:05.5657882Z   set-safe-directory: true
+api-tests	Получить код	2026-10-27T09:20:05.5658398Z   allow-unsafe-pr-checkout: false
+api-tests	Получить код	2026-10-27T09:20:05.5659270Z ##[endgroup]
+api-tests	Получить код	2026-10-27T09:20:05.6714223Z Syncing repository: dulfi4/hw3-testing
+api-tests	Получить код	2026-10-27T09:20:05.6716883Z ##[group]Getting Git version info
+api-tests	Получить код	2026-10-27T09:20:05.6718301Z Working directory is '/home/runner/work/hw3-testing/hw3-testing'
+api-tests	Получить код	2026-10-27T09:20:05.6720164Z [command]/usr/bin/git version
+api-tests	Получить код	2026-10-27T09:20:05.6785560Z git version 2.55.0
+api-tests	Получить код	2026-10-27T09:20:05.6815504Z ##[endgroup]
+api-tests	Получить код	2026-10-27T09:20:05.6834598Z Temporarily overriding HOME='/home/runner/work/_temp/c42d16f1-2496-4a4b-9d12-2d1fc0120453' before making global git config changes
+api-tests	Получить код	2026-10-27T09:20:05.6836660Z Adding repository directory to the temporary git global config as a safe directory
+api-tests	Получить код	2026-10-27T09:20:05.6846511Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/hw3-testing/hw3-testing
+api-tests	Получить код	2026-10-27T09:20:05.6903186Z Deleting the contents of '/home/runner/work/hw3-testing/hw3-testing'
+api-tests	Получить код	2026-10-27T09:20:05.6910653Z ##[group]Initializing the repository
+api-tests	Получить код	2026-10-27T09:20:05.6921104Z [command]/usr/bin/git init /home/runner/work/hw3-testing/hw3-testing
+api-tests	Получить код	2026-10-27T09:20:05.7027277Z hint: Using 'master' as the name for the initial branch. This default branch name
+api-tests	Получить код	2026-10-27T09:20:05.7029109Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+api-tests	Получить код	2026-10-27T09:20:05.7030742Z hint: to use in all of your new repositories, which will suppress this warning,
+api-tests	Получить код	2026-10-27T09:20:05.7032586Z hint: call:
+api-tests	Получить код	2026-10-27T09:20:05.7033271Z hint:
+api-tests	Получить код	2026-10-27T09:20:05.7034127Z hint: 	git config --global init.defaultBranch <name>
+api-tests	Получить код	2026-10-27T09:20:05.7035206Z hint:
+api-tests	Получить код	2026-10-27T09:20:05.7036198Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+api-tests	Получить код	2026-10-27T09:20:05.7037787Z hint: 'development'. The just-created branch can be renamed via this command:
+api-tests	Получить код	2026-10-27T09:20:05.7039036Z hint:
+api-tests	Получить код	2026-10-27T09:20:05.7039745Z hint: 	git branch -m <name>
+api-tests	Получить код	2026-10-27T09:20:05.7040551Z hint:
+api-tests	Получить код	2026-10-27T09:20:05.7041787Z hint: Disable this message with "git config set advice.defaultBranchName false"
+api-tests	Получить код	2026-10-27T09:20:05.7043567Z Initialized empty Git repository in /home/runner/work/hw3-testing/hw3-testing/.git/
+api-tests	Получить код	2026-10-27T09:20:05.7046315Z [command]/usr/bin/git remote add origin https://github.com/dulfi4/hw3-testing
+api-tests	Получить код	2026-10-27T09:20:05.7113656Z ##[endgroup]
+api-tests	Получить код	2026-10-27T09:20:05.7115034Z ##[group]Disabling automatic garbage collection
+api-tests	Получить код	2026-10-27T09:20:05.7116211Z [command]/usr/bin/git config --local gc.auto 0
+api-tests	Получить код	2026-10-27T09:20:05.7149831Z ##[endgroup]
+api-tests	Получить код	2026-10-27T09:20:05.7150796Z ##[group]Setting up auth
+api-tests	Получить код	2026-10-27T09:20:05.7159502Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+api-tests	Получить код	2026-10-27T09:20:05.7201866Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+api-tests	Получить код	2026-10-27T09:20:05.7612153Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+api-tests	Получить код	2026-10-27T09:20:05.7649182Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+api-tests	Получить код	2026-10-27T09:20:05.7883787Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+api-tests	Получить код	2026-10-27T09:20:05.7922846Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+api-tests	Получить код	2026-10-27T09:20:05.8157067Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+api-tests	Получить код	2026-10-27T09:20:05.8203573Z ##[endgroup]
+api-tests	Получить код	2026-10-27T09:20:05.8204610Z ##[group]Fetching the repository
+api-tests	Получить код	2026-10-27T09:20:05.8214098Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +102f42250989bf51445a6e10a6835549ad2d7fd7:refs/remotes/origin/main
+api-tests	Получить код	2026-10-27T09:20:06.1262888Z From https://github.com/dulfi4/hw3-testing
+api-tests	Получить код	2026-10-27T09:20:06.1263960Z  * [new ref]         102f42250989bf51445a6e10a6835549ad2d7fd7 -> origin/main
+api-tests	Получить код	2026-10-27T09:20:06.1267349Z ##[endgroup]
+api-tests	Получить код	2026-10-27T09:20:06.1268153Z ##[group]Determining the checkout info
+api-tests	Получить код	2026-10-27T09:20:06.1269669Z ##[endgroup]
+api-tests	Получить код	2026-10-27T09:20:06.1276236Z [command]/usr/bin/git sparse-checkout disable
+api-tests	Получить код	2026-10-27T09:20:06.1330789Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+api-tests	Получить код	2026-10-27T09:20:06.1370233Z ##[group]Checking out the ref
+api-tests	Получить код	2026-10-27T09:20:06.1371231Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+api-tests	Получить код	2026-10-27T09:20:06.1440358Z Switched to a new branch 'main'
+api-tests	Получить код	2026-10-27T09:20:06.1446223Z branch 'main' set up to track 'origin/main'.
+api-tests	Получить код	2026-10-27T09:20:06.1453840Z ##[endgroup]
+api-tests	Получить код	2026-10-27T09:20:06.1501578Z [command]/usr/bin/git log -1 --format=%H
+api-tests	Получить код	2026-10-27T09:20:06.1530576Z 102f42250989bf51445a6e10a6835549ad2d7fd7
+api-tests	Собрать образ	﻿2026-10-27T09:20:06.1764433Z ##[group]Run docker build -t api-test .
+api-tests	Собрать образ	2026-10-27T09:20:06.1765159Z ^[[36;1mdocker build -t api-test .^[[0m
+api-tests	Собрать образ	2026-10-27T09:20:06.2021877Z shell: /usr/bin/bash -e {0}
+api-tests	Собрать образ	2026-10-27T09:20:06.2022599Z ##[endgroup]
+api-tests	Собрать образ	2026-10-27T09:20:06.9112993Z #0 building with "default" instance using docker driver
+api-tests	Собрать образ	2026-10-27T09:20:06.9113808Z 
+api-tests	Собрать образ	2026-10-27T09:20:06.9114069Z #1 [internal] load build definition from Dockerfile
+api-tests	Собрать образ	2026-10-27T09:20:06.9114646Z #1 transferring dockerfile: 272B done
+api-tests	Собрать образ	2026-10-27T09:20:06.9115594Z #1 DONE 0.0s
+api-tests	Собрать образ	2026-10-27T09:20:06.9115814Z 
+api-tests	Собрать образ	2026-10-27T09:20:06.9116080Z #2 [auth] library/golang:pull token for registry-1.docker.io
+api-tests	Собрать образ	2026-10-27T09:20:06.9116641Z #2 DONE 0.0s
+api-tests	Собрать образ	2026-10-27T09:20:06.9116861Z 
+api-tests	Собрать образ	2026-10-27T09:20:06.9117569Z #3 [internal] load metadata for docker.io/library/golang:1.25.6-alpine3.23@sha256:98e6cffc31ccc44c7c15d83df1d69891efee8115a5bb7ede2bf30a38af3e3c92
+api-tests	Собрать образ	2026-10-27T09:20:07.2260312Z #3 DONE 0.5s
+api-tests	Собрать образ	2026-10-27T09:20:07.3520645Z 
+api-tests	Собрать образ	2026-10-27T09:20:07.3521792Z #4 [internal] load .dockerignore
+api-tests	Собрать образ	2026-10-27T09:20:07.3523286Z #4 transferring context: 89B done
+api-tests	Собрать образ	2026-10-27T09:20:07.3524173Z #4 DONE 0.0s
+api-tests	Собрать образ	2026-10-27T09:20:07.3524544Z 
+api-tests	Собрать образ	2026-10-27T09:20:07.3525019Z #5 [internal] load build context
+api-tests	Собрать образ	2026-10-27T09:20:07.3525590Z #5 transferring context: 14.04kB done
+api-tests	Собрать образ	2026-10-27T09:20:07.3526378Z #5 DONE 0.0s
+api-tests	Собрать образ	2026-10-27T09:20:07.3526909Z 
+api-tests	Собрать образ	2026-10-27T09:20:07.3527979Z #6 [1/5] FROM docker.io/library/golang:1.25.6-alpine3.23@sha256:98e6cffc31ccc44c7c15d83df1d69891efee8115a5bb7ede2bf30a38af3e3c92
+api-tests	Собрать образ	2026-10-27T09:20:07.3530480Z #6 resolve docker.io/library/golang:1.25.6-alpine3.23@sha256:98e6cffc31ccc44c7c15d83df1d69891efee8115a5bb7ede2bf30a38af3e3c92 done
+api-tests	Собрать образ	2026-10-27T09:20:07.3532259Z #6 extracting sha256:589002ba0eaed121a1dbf42f6648f29e5be55d5c8a6ee0f8eaa0285cc21ac153
+api-tests	Собрать образ	2026-10-27T09:20:07.3533617Z #6 sha256:5ad936b911f013e0d5e8e1872c1005ff3700a9d10b1edf23acfe69ebf39758ce 125B / 125B 0.1s done
+api-tests	Собрать образ	2026-10-27T09:20:07.3535024Z #6 sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 32B / 32B 0.1s done
+api-tests	Собрать образ	2026-10-27T09:20:07.3536300Z #6 sha256:98e6cffc31ccc44c7c15d83df1d69891efee8115a5bb7ede2bf30a38af3e3c92 10.29kB / 10.29kB done
+api-tests	Собрать образ	2026-10-27T09:20:07.3537493Z #6 sha256:72613572613050e1c6da0a585daf8f7d4174eb17a0c9c3a539633d677e3e2979 1.92kB / 1.92kB done
+api-tests	Собрать образ	2026-10-27T09:20:07.3538888Z #6 sha256:32eb1b17fb288f55faaf325ed5f3188968c4887057459fbe87024092539077bf 2.19kB / 2.19kB done
+api-tests	Собрать образ	2026-10-27T09:20:07.3539824Z #6 sha256:589002ba0eaed121a1dbf42f6648f29e5be55d5c8a6ee0f8eaa0285cc21ac153 3.86MB / 3.86MB 0.1s done
+api-tests	Собрать образ	2026-10-27T09:20:07.3541626Z #6 sha256:c12843b674336be62defd21ad5cc5ec625ab7ab140b46a2a49d11e46ad25d08a 296.08kB / 296.08kB 0.1s done
+api-tests	Собрать образ	2026-10-27T09:20:07.3543025Z #6 sha256:20c503e035cd5c1ea67986d21ed1fb2f4305f801555c52f9f16ce0f0f5cf2e16 7.34MB / 60.15MB 0.1s
+api-tests	Собрать образ	2026-10-27T09:20:07.4690210Z #6 extracting sha256:589002ba0eaed121a1dbf42f6648f29e5be55d5c8a6ee0f8eaa0285cc21ac153 0.1s done
+api-tests	Собрать образ	2026-10-27T09:20:07.4694053Z #6 sha256:20c503e035cd5c1ea67986d21ed1fb2f4305f801555c52f9f16ce0f0f5cf2e16 40.89MB / 60.15MB 0.2s
+api-tests	Собрать образ	2026-10-27T09:20:07.4699088Z #6 extracting sha256:c12843b674336be62defd21ad5cc5ec625ab7ab140b46a2a49d11e46ad25d08a
+api-tests	Собрать образ	2026-10-27T09:20:07.6016675Z #6 sha256:20c503e035cd5c1ea67986d21ed1fb2f4305f801555c52f9f16ce0f0f5cf2e16 60.15MB / 60.15MB 0.3s done
+api-tests	Собрать образ	2026-10-27T09:20:07.6017963Z #6 extracting sha256:c12843b674336be62defd21ad5cc5ec625ab7ab140b46a2a49d11e46ad25d08a 0.1s done
+api-tests	Собрать образ	2026-10-27T09:20:07.6019355Z #6 extracting sha256:20c503e035cd5c1ea67986d21ed1fb2f4305f801555c52f9f16ce0f0f5cf2e16
+api-tests	Собрать образ	2026-10-27T09:20:12.0116145Z #6 extracting sha256:20c503e035cd5c1ea67986d21ed1fb2f4305f801555c52f9f16ce0f0f5cf2e16 4.3s done
+api-tests	Собрать образ	2026-10-27T09:20:12.4694272Z #6 extracting sha256:5ad936b911f013e0d5e8e1872c1005ff3700a9d10b1edf23acfe69ebf39758ce
+api-tests	Собрать образ	2026-10-27T09:20:12.6580481Z #6 extracting sha256:5ad936b911f013e0d5e8e1872c1005ff3700a9d10b1edf23acfe69ebf39758ce done
+api-tests	Собрать образ	2026-10-27T09:20:12.6583264Z #6 extracting sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 done
+api-tests	Собрать образ	2026-10-27T09:20:12.6584535Z #6 DONE 5.3s
+api-tests	Собрать образ	2026-10-27T09:20:12.6585004Z 
+api-tests	Собрать образ	2026-10-27T09:20:12.6586019Z #7 [2/5] WORKDIR /app
+api-tests	Собрать образ	2026-10-27T09:20:12.6586738Z #7 DONE 0.0s
+api-tests	Собрать образ	2026-10-27T09:20:12.6587168Z 
+api-tests	Собрать образ	2026-10-27T09:20:12.6587431Z #8 [3/5] COPY go.mod ./
+api-tests	Собрать образ	2026-10-27T09:20:12.6587915Z #8 DONE 0.0s
+api-tests	Собрать образ	2026-10-27T09:20:12.6588275Z 
+api-tests	Собрать образ	2026-10-27T09:20:12.6588735Z #9 [4/5] RUN go mod download
+api-tests	Собрать образ	2026-10-27T09:20:12.6589309Z #9 0.135 go: no module dependencies to download
+api-tests	Собрать образ	2026-10-27T09:20:12.8324338Z #9 DONE 0.1s
+api-tests	Собрать образ	2026-10-27T09:20:12.8325982Z 
+api-tests	Собрать образ	2026-10-27T09:20:12.8326542Z #10 [5/5] COPY *_test.go ./
+api-tests	Собрать образ	2026-10-27T09:20:12.8327330Z #10 DONE 0.0s
+api-tests	Собрать образ	2026-10-27T09:20:12.8327906Z 
+api-tests	Собрать образ	2026-10-27T09:20:12.8328309Z #11 exporting to image
+api-tests	Собрать образ	2026-10-27T09:20:12.8328868Z #11 exporting layers
+api-tests	Собрать образ	2026-10-27T09:20:13.6852909Z #11 exporting layers 1.0s done
+api-tests	Собрать образ	2026-10-27T09:20:13.7040947Z #11 writing image sha256:70088dbbd427660644144548581296355f1c7725a5db921419f59f8041c61361 done
+api-tests	Собрать образ	2026-10-27T09:20:13.7042097Z #11 naming to docker.io/library/api-test done
+api-tests	Собрать образ	2026-10-27T09:20:13.7042602Z #11 DONE 1.0s
+api-tests	Запустить тесты	﻿2026-10-27T09:20:13.7137167Z ##[group]Run docker run --rm api-test
+api-tests	Запустить тесты	2026-10-27T09:20:13.7137568Z ^[[36;1mdocker run --rm api-test^[[0m
+api-tests	Запустить тесты	2026-10-27T09:20:13.7203400Z shell: /usr/bin/bash -e {0}
+api-tests	Запустить тесты	2026-10-27T09:20:13.7203697Z ##[endgroup]
+api-tests	Запустить тесты	2026-10-27T09:20:26.7718642Z === RUN   TestGraphQLQuery
+api-tests	Запустить тесты	2026-10-27T09:20:26.7719774Z === RUN   TestGraphQLQuery/Oleg
+api-tests	Запустить тесты	2026-10-27T09:20:26.9461189Z === RUN   TestGraphQLQuery/Олег
+api-tests	Запустить тесты	2026-10-27T09:20:27.0275320Z --- PASS: TestGraphQLQuery (0.26s)
+api-tests	Запустить тесты	2026-10-27T09:20:27.0276170Z     --- PASS: TestGraphQLQuery/Oleg (0.17s)
+api-tests	Запустить тесты	2026-10-27T09:20:27.0277029Z     --- PASS: TestGraphQLQuery/Олег (0.08s)
+api-tests	Запустить тесты	2026-10-27T09:20:27.0277411Z === RUN   TestGraphQLMutation
+api-tests	Запустить тесты	2026-10-27T09:20:27.1524540Z --- PASS: TestGraphQLMutation (0.12s)
+api-tests	Запустить тесты	2026-10-27T09:20:27.1525137Z === RUN   TestGraphQLMutationRejectsInvalidVariables
+api-tests	Запустить тесты	2026-10-27T09:20:27.1526058Z === RUN   TestGraphQLMutationRejectsInvalidVariables/Возраст_строкой
+api-tests	Запустить тесты	2026-10-27T09:20:27.2910543Z === RUN   TestGraphQLMutationRejectsInvalidVariables/Дробный_возраст
+api-tests	Запустить тесты	2026-10-27T09:20:27.4388944Z === RUN   TestGraphQLMutationRejectsInvalidVariables/Имя_не_передано
+api-tests	Запустить тесты	2026-10-27T09:20:27.5308656Z --- PASS: TestGraphQLMutationRejectsInvalidVariables (0.38s)
+api-tests	Запустить тесты	2026-10-27T09:20:27.5309634Z     --- PASS: TestGraphQLMutationRejectsInvalidVariables/Возраст_строкой (0.14s)
+api-tests	Запустить тесты	2026-10-27T09:20:27.5310420Z     --- PASS: TestGraphQLMutationRejectsInvalidVariables/Дробный_возраст (0.15s)
+api-tests	Запустить тесты	2026-10-27T09:20:27.5311195Z     --- PASS: TestGraphQLMutationRejectsInvalidVariables/Имя_не_передано (0.09s)
+api-tests	Запустить тесты	2026-10-27T09:20:27.5312004Z === RUN   TestRESTPostLifecycle
+api-tests	Запустить тесты	2026-10-27T09:20:29.7658943Z --- PASS: TestRESTPostLifecycle (2.23s)
+api-tests	Запустить тесты	2026-10-27T09:20:29.7659874Z === RUN   TestRESTLoginAndBearer
+api-tests	Запустить тесты	2026-10-27T09:20:30.5814305Z --- PASS: TestRESTLoginAndBearer (0.82s)
+api-tests	Запустить тесты	2026-10-27T09:20:30.5815128Z === RUN   TestRESTMeRejectsInvalidToken
+api-tests	Запустить тесты	2026-10-27T09:20:30.5816008Z === RUN   TestRESTMeRejectsInvalidToken/Без_токена
+api-tests	Запустить тесты	2026-10-27T09:20:30.8573707Z === RUN   TestRESTMeRejectsInvalidToken/Неверный_токен
+api-tests	Запустить тесты	2026-10-27T09:20:30.9944632Z --- PASS: TestRESTMeRejectsInvalidToken (0.41s)
+api-tests	Запустить тесты	2026-10-27T09:20:30.9945913Z     --- PASS: TestRESTMeRejectsInvalidToken/Без_токена (0.28s)
+api-tests	Запустить тесты	2026-10-27T09:20:30.9946951Z     --- PASS: TestRESTMeRejectsInvalidToken/Неверный_токен (0.14s)
+api-tests	Запустить тесты	2026-10-27T09:20:30.9947764Z PASS
+api-tests	Запустить тесты	2026-10-27T09:20:30.9949556Z ok  	hw3-kudrin	4.225s
+api-tests	Post Получить код	﻿2026-10-27T09:20:31.3812215Z Post job cleanup.
+api-tests	Post Получить код	2026-10-27T09:20:31.4670057Z [command]/usr/bin/git version
+api-tests	Post Получить код	2026-10-27T09:20:31.4722398Z git version 2.55.0
+api-tests	Post Получить код	2026-10-27T09:20:31.4767088Z Temporarily overriding HOME='/home/runner/work/_temp/c0e72269-940b-4b8d-be77-7e10bbe3e52c' before making global git config changes
+api-tests	Post Получить код	2026-10-27T09:20:31.4768750Z Adding repository directory to the temporary git global config as a safe directory
+api-tests	Post Получить код	2026-10-27T09:20:31.4774065Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/hw3-testing/hw3-testing
+api-tests	Post Получить код	2026-10-27T09:20:31.4820534Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+api-tests	Post Получить код	2026-10-27T09:20:31.4874778Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+api-tests	Post Получить код	2026-10-27T09:20:31.5137849Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+api-tests	Post Получить код	2026-10-27T09:20:31.5169596Z http.https://github.com/.extraheader
+api-tests	Post Получить код	2026-10-27T09:20:31.5184771Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+api-tests	Post Получить код	2026-10-27T09:20:31.5232555Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+api-tests	Post Получить код	2026-10-27T09:20:31.5529887Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+api-tests	Post Получить код	2026-10-27T09:20:31.5573393Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+api-tests	Complete job	﻿2026-10-27T09:20:31.5965374Z Cleaning up orphan processes
+api-tests	Complete job	2026-10-27T09:20:31.6420887Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11d5960a326750d5838078e36cf38b85af677262. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

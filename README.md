@@ -20,6 +20,6 @@ docker run --rm -e GRAPHQL_API_URL=http://127.0.0.1:1/graphql api-test
 
 Для ci добавил .github/workflows/ci.yml. После пуша github actions собирает образ и запускает в нем тесты. Если сборка или тесты падают, джоба тоже падает. Запуск по pull request и вручную тоже добавил.
 
-Репозиторий лабы: [hw3-testing](https://github.com/dulfi4/hw3-testing). Результаты ci будут во вкладке Actions.
+Репозиторий лабы: [hw3-testing](https://github.com/dulfi4/hw3-testing). [ci прошёл](https://github.com/dulfi4/hw3-testing/actions/runs/40479968660), образ собрался и тесты внутри контейнера отработали без ошибок.
 
 Логи сборки и запусков сохранил в evidence.
